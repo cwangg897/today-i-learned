@@ -69,3 +69,7 @@ service명령어를 치면 여러개가 나오는데 그중 로드밸런서, 노
 서비스를 삭제하는걸로 끝나는게 아니라 파드도 삭제해줘야한다.
 그래서 kubectl get deployments랑 pods를 가져와서 이러한 것도 삭제시켜줘야한다. 그전에는 엔진엑스를 노드포터로 하여서 서비스가 보였던것이다.
 
+
+### yaml기반 삭제
+kubectl delete -f ~/_Lecture_k8s_starter.kit//ch2/2.4/metallb.yaml<br>
+kubectl delete를 사용하여 YAML 파일을 기반으로 Kubernetes 리소스를 삭제하는 명령어입니다.
